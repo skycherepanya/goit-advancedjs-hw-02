@@ -1,0 +1,80 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 400px;
+  margin: 24px auto;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+
+.form input[type='number'] {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+  outline: none;
+}
+
+.form input[type='number']:focus {
+  border-color: #007aff;
+  box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.15);
+}
+
+.form fieldset {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  gap: 24px;
+}
+
+.form fieldset legend {
+  color: #666;
+  font-size: 14px;
+  padding: 0 8px;
+}
+
+.form fieldset label {
+  flex-direction: row;
+  align-items: center;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.form button {
+  padding: 12px 24px;
+  background-color: #007aff;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+  margin-top: 8px;
+}
+
+.form button:hover {
+  background-color: #006ce0;
+}
+
+.form button:active {
+  transform: scale(0.98);
+}
